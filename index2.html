@@ -10,13 +10,48 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- uses favicon image as website icon -->
     <title>html tutorial</title>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 55px;
+            background-color: #d6b0b0;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: #d5ffff;
+        }
+        img{
+            border: 4px solid blue;
+        }
+    </style>
 </head>
 
 <body>
     
-  <h1>List and tables </h1>
-
+    <nav>
+    <!-- Links in html -->
+   <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a>
     
+   <a href="http://www.facebook.com" target="_top">Facebook</a>
+   
+    <!-- _top opens link in full body of window  -->
+   <a href="http://www.instagram.com" target="_parent">Instagram</a>
+   
+    <!-- _parent opens link in parent frame  -->
+
+    <a href="mailto:user@gmail.com">mail</a>
+     <!-- links to mail add -->
+      
+    <a href="tel:+234567890">Phone</a>
+     <!-- links to phone no  -->
+
+    </nav>
+  <h1>List and tables </h1>
 
     <!-- unordered list  -->
      <h2>Unordered lists</h2>
@@ -27,6 +62,7 @@
         <li>Greet</li>
         <!-- li is list item  | types circle,square,disc-->
     </ul>
+
     <!-- ordered list -->
      <h3>Ordered List</h3>
     <ol>
@@ -37,6 +73,7 @@
         <!-- types of ol i,I,1,etc -->
     </ol>
    <!-- Defintion List  -->
+    <h3>Defintion List</h3>
     <dl>
         <dt>Cricket</dt>
         <dl>Cricket is a bat-and-ball game played between two teams of eleven players on a field, at the centre of which is a 22-yard (20-metre; 66-foot) pitch with a wicket at each end, each comprising two bails (small sticks) balanced on three stumps. Two players from the batting team, the striker and nonstriker, stand in front of either wicket holding bats, while one player from the fielding team, the bowler, bowls the ball toward the striker's wicket from the opposite end of the pitch</dl>
@@ -75,28 +112,16 @@
         </table>
     </div>
     
-        <h5>Links</h5>
-     <!-- Links in html -->
-    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a>
-     <br>
-    <a href="http://www.facebook.com" target="_top">Facebook</a>
-    <br>
-     <!-- _top opens link in full body of window  -->
-    <a href="http://www.instagram.com" target="_parent">Instagram</a>
-    <br>
-     <!-- _parent opens link in parent frame  -->
-
-     <a href="mailto:user@gmail.com">mail</a>
-      <!-- links to mail add -->
-       <br>
-     <a href="tel:+234567890">Phone</a>
-      <!-- links to phone no  -->
+    
    
     <div>
         <h6>Images and Video</h6>
-    <img src="image1.png"  height="100px" width="100vw" alt="pngimage">
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-09/08/full/1662657385-7641.jpg"  height="200px" alt="pngimage">
+    
+    
+
         <!-- img tag is used for images -->
-     <video src="vid.mp4"></video>
+     <video src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ae0948b48456559f121e6125f162592c__P360.mp4" height="200px" autoplay></video>
      <!-- used for video    -->
     </div>
 </body>
