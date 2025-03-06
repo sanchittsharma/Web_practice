@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul {
+    
+    display: flex;
+    background-color: #ad5afacc;
+}
+
+header {
+   
+    top: 0;
+}
+
+.nav {
+    height: 5vh;
+    width: 100vw;
+    border: 1px solid black;
+    
+}
+
+.container {
+    background-color: antiquewhite;
+    background-size: contain;
+    display: flex;
+    height: 60vh;
+    width: 95vw;
+    border: 1px solid black;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.box1 {
+    height: 70%;
+    width: 40%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 2px solid black;
+    
+}
+
+.box2 {
+  
+    height: 70%;
+    width: 40%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 2px solid black;
+}
+
+ul li {
+    list-style: none;
+    padding: 13px;
+}
+
+.last {
+    position: relative;
+    margin-left: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80vw;
+    height: 30vh;
+    overflow: auto;
+    align-items: center;
+}
+
+footer {
+    margin: 10px;
+    border: 1px solid black;
+    width: 100vw;
+    height: 7vh;
+    background-color: blue;
+}
+    </style>
+</head>
+
+<body>
+    <header id="nav">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="box1"> Box </div>
+        <div class="box2">Box</div>
+    </div>
+    <div class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquam deleniti ducimus. Libero earum animi voluptatibus sit tenetur voluptas laborum eligendi cum, odit laudantium explicabo officiis ex illo eaque, doloremque quos, accusamus
+        accusantium fugiat consectetur dolores in repellat ratione sint. Sunt praesentium aliquid quas fugit, debitis reprehenderit voluptates, perferendis laudantium quaerat doloribus exercitationem? Quibusdam distinctio accusantium laboriosam assumenda
+        .
+    </div>
+    <footer>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta facilis ratione adipisci beatae officia ipsa vel. In cumque facere dolor!</footer>
+</body>
+
+</html>
