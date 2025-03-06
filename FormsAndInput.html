@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and Input</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149155031.jpg?t=st=1741247557~exp=1741251157~hmac=6798a8ff15aef074b8d803f76ad0ec6e2e0365c6851d83c69ee636786c3c0c84&w=1380);
+      
+      }
+      .formcont{
+        width: 300px;
+        backdrop-filter: blur(16px);
+        ;
+
+      }
+      .formcont input {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+      
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="formcont">
+    <h1>LOGIN</h1>
+    <form>
+       
+      <label for="username">Enter your name : </label>
+      <input type="text" id="username" placeholder="Enter Username" />
+    
+      <label for="emai">Enter your Email : </label>
+      <input type="email" id="email" placeholder="Mail" />
+    
+    
+      <label for="password">Enter Your password : </label>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        minlength="8"
+      />
+    
+      <label for="Gender">Gender : </label>
+      <input type="radio" id="Male" name="Gender" style="margin: -122px;" />
+      <label for="Male"> Male</label>
+      <input type="radio" id="female" name="Gender" style="margin: -122px;" />
+      <label for="female"> Female</label>
+    
+      <input type="checkbox" id="tc" style="margin: -111px;" />
+      <label for="yc">Accept Terms & Conditions</label>
+   
+      <input type="submit" value="Click here" />
+    </form>
+</div>
+
+  </body>
+</html>
