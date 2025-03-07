@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>Geolocation API</h1>
+    <h2>Find My Location</h2>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="location">Latitude: - <br> Longitude: -</p>
+
+   
+
+     <h3>Web Worker API Example</h3>
+     <button onclick="startWorker()">Start Worker</button>
+     <p>Result: <span id="result">Waiting...</span></p>
+     <button onclick="stopworker()">stop worker</button>
+      
+     <h3>Web Storage API</h3>
+     <h2>Enter Your Name:</h2>
+    <input type="text" id="username" placeholder="Enter name">
+    <button onclick="saveName()">Save Name</button>
+    <button onclick="clearName()">Clear Name</button>
+    
+    <p id="greeting"></p>
+
+    
+    
+     <script src="API.js"></script>
+</body>
+</html>
