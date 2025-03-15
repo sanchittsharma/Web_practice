@@ -1,0 +1,12 @@
+div {
+    background-color: rgb(145, 49, 234);
+    transform: translate(100px, 100px);
+    /* transforms(horizontal,vertical) */
+    transform: rotate(-35deg);
+    transform: scale(1, 4);
+    /* for zoom */
+    margin: 100px;
+    transform: skew(-30deg);
+    /*for tilt*/
+    /* transform: matrix(1,2,); */
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            /*html is a root element */
+            font-size: 12px;
+        }
+        
+        .box {
+            box-sizing: border-box;
+            border: solid black;
+            margin: auto;
+            /*margin auto gives equal margin from L to R only in block level element*/
+            width: 80vw;
+            /* vw is viewport widht sets width according to device */
+            height: 10vh;
+            /*vh is viewport height sets height acc. to device*/
+            color: blue;
+            background-color: aqua;
+        }
+        
+        .container {
+            border: solid black;
+            margin: 20px auto;
+            /*margin auto gives equal margin from L to R only in block level element*/
+            width: 80vw;
+            /* vw is viewport widht sets width according to device */
+            height: 80vh;
+            /*vh is viewport height sets height acc. to device*/
+            min-height: 80vh;
+            /*min hegiht holds min 80vh height if the content is less and more height for more content*/
+            color: blue;
+            background-color: aqua;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+        
+        .container p {
+            font-size: 2em;
+            /*em multiplies the size with inherited size*/
+            font-size: 2rem;
+            /*rem multiplies the size with root element size*/
+            width: 50%;
+            /* % applies the %age of parent container */
+        }
+        
+        .cont {
+            border: 2px solid black;
+            background-color: antiquewhite;
+            width: 100vmin;
+            /*vmin select min of height and widht acc. to device*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is a box</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente animi laboriosam sequi blanditiis iste accusamus accusantium! Consectetur iusto ullam qui fugiat velit nobis magni nemo, totam cumque eum quisquam cum, dolor facere voluptatibus
+            asperiores alias. Hic non amet architecto nemo, quasi perferendis nam. Itaque soluta rerum dolorum illum reprehenderit ducimus consequuntur? Nulla rerum alias nostrum dolor.</p>
+    </div>
+    <div class="cont">Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>

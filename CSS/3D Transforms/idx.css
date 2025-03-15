@@ -1,0 +1,15 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    border: 1px solid black;
+}
+
+.box1 {
+    transform: perspective(20px) translateZ(-15px);
+}
+
+.box2 {
+    margin-left: 180px;
+    transform: perspective(350px) rotatex(50deg) rotateY(20deg) scaleZ(60);
+}

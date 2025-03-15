@@ -1,0 +1,71 @@
+.container {
+    height: 100px;
+    border: 2px solid green;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /*for direction*/
+    /* flex-flow: row wrap; */
+    /*for direction and wrap both*/
+    justify-content: flex-start;
+    /*for place content at starting*/
+    /* justify-content applies on main axis that's horizontal axis */
+    justify-content: flex-end;
+    /*(for content in end) */
+    justify-content: center;
+    /*put the content in center;*/
+    /* justify-content: space-around; */
+    /*gives equal space between all (not left and right)*/
+    /* justify-content: space-evenly; */
+    /*gives equal space between all; */
+    /* justify-content: space-between; */
+    /*gives equal space between all & 1st and last item join with parent container; */
+    /* ********************************************* */
+    /* align-items applies on vertical axis */
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline; */
+    /* gap;  used for giving gap */
+    /* *********************************************** */
+    /* align content is used for handle gap between rows */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    /* flex items  */
+}
+
+
+/* align self is used to align one item */
+
+.box {
+    border: 1px solid black;
+    width: 100px;
+    flex-basis: 100px;
+    /* flex basis is used to give width size flexible  */
+}
+
+#box1 {
+    order: 1;
+    /* order default value is 0  */
+    flex-grow: 1;
+    flex-shrink: 4;
+    align-self: flex-start;
+    /* flex shrink is used to manage the shrinking speed */
+}
+
+#box2 {
+    order: 5;
+    flex-grow: 1;
+    align-self: flex-end;
+    /* flex grow is used to increase size */
+}
+
+#box3 {
+    order: 4;
+    align-self: stretch;
+}

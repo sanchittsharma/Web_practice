@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    margin: 43px;
+    padding: 30px;
+    height: 5000px;
+    border: 5px solid plum;
+    /* if there is any filter transform or perspective properties then it will work as positioned */
+    position: absolute;
+}
+
+#box1 {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    border: 2px solid black;
+    height: 40vh;
+    width: 40vw;
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: blueviolet;
+    position: fixed;
+    top: 3px;
+    left: 20px;
+    /* fixed position is used to fix an element */
+    border: 2px solid black;
+    height: 40vh;
+    width: 40vw;
+}
+
+#box3 {
+    background-color: bisque;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    border: 2px solid black;
+    height: 40vh;
+    width: 40vw;
+}
+
+
+/*
+absolute is used for  nearest positioned ancestor
+*/
+
+#box4 {
+    background-color: coral;
+    border: 2px solid black;
+    height: 20vh;
+    width: 40vw;
+    position: sticky;
+    top: 0px;
+}
