@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        #secondp{
+            display: none;
+        }
+        div{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        h3, .slide{
+            border: 1px solid blue;
+            width: 50%;
+            background-color: bisque;
+            margin-bottom: 0%
+
+        }
+        .slide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>This contains something click to see</h3>
+    <div class="slide">Nothing much too see</div>
+    <p id="fp">Click the button to hide me</p>
+    <button class="first">Click</button>
+    <p id="secondp">Ohhh! I am Here </p>
+    <button class="second">Click here to generate a para</button>
+    <div>Example box</div>
+    <div>Example box 2</div>
+    <button class="fade">click to toggle boxes</button>
+    <button class="chain">Change css </button>
+
+    <script>
+         $(".second").click(function(){
+            $("p").toggle("slow")
+        })
+         $(".fade").click(function(){
+            $("div").fadeToggle("slow")
+        })
+         $("h3").click(function(){
+            $(".slide").slideToggle("slow")
+        })
+         $(".chain").click(function(){
+            $("div").css("backgroundColor","blue" )
+        })
+
+    </script>
+</body>
+</html>

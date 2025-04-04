@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQueryBasics</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p>Click the button to hide me</p>
+    <button id="exbtn">Click Here</button>
+    <p>Second para</p>
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+    </ul>
+    <a href="">No Link</a>
+    <script>
+      // $("p:first").hide()
+      $("ul li:first").hide();
+      $("#exbtn").click(function () {
+        $("p:first").hide();
+      });
+      $("[href]").click(function(){
+        alert("You Clicked the element with href tag")
+      })
+    </script>
+  </body>
+</html>
+
+<!-- // jQuery Syntax 
+    $(selector).action()
+ $("p").hide(); hide all p -->
+
+<!-- Selectors in jQuery =>
+       $("*")	Selects all elements	
+       $(this)	Selects the current HTML element	
+       $("p.intro")	Selects all <p> elements with class="intro"	
+       $("p:first")	Selects the first <p> element	
+       $("ul li:first")	Selects the first <li> element of the first <ul>	
+       $("ul li:first-child")	Selects the first <li> element of every <ul>	
+       $("[href]")	Selects all elements with an href attribute
+      -->
