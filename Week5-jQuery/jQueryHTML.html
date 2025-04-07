@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery HTML</title>
+    <style>
+        div{
+            height: 200px;
+            width:  200px;
+            border: 1px solid;
+        }
+        .blue{
+            color: rgb(229, 148, 19);
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <p id="ex">example paragraph for <b>jQuery HTML</b></p>
+    <button id="appendtext"> append text</button>
+    <button id="prependtext"> prepend text</button>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+    <p id="inputtext">get text</p>
+    <input type="text" value="name" id="username">
+    <button id="input">Value</button>
+    <button id="setval">Set value</button>
+    <p id="after">click the button to add text</p>
+    <button id="aftertext" onclick="afterText()">click</button>
+    <div>This is a box
+        <p>This is a paragraph in the div.</p>
+<p>This is another paragraph in the div.</p>
+    </div>
+    <button id="removebox">Remove box</button>
+    <button id="empty">Empty box</button>
+    <button id="class">Make the color orange</button>
+    <button id="divblue">Make the box blue</button>
+    <script>
+        function afterText() {
+  var txt1 = "<b>example text </b>";                    
+  var txt2 = $("<i></i>").text("for inserting ");     
+  var txt3 = document.createElement("b");    
+  txt3.innerHTML = "after para!";
+  $("#after").after(txt1, txt2, txt3);          
+}
+
+        $(document).ready(function(){
+
+          $("#appendtext").click(function(){
+            $("#ex").append("<b>text appended</b>")
+          });
+          $("#prependtext").click(function(){
+            $("#ex").prepend("<b>text prepended</b>")
+          });
+          
+          $("#btn1").click(function(){
+            alert("Text: " + $("p").text());
+          });
+          $("#btn2").click(function(){
+            alert("HTML: " + $("p").html());
+          });
+          $("#input").click(function(){
+            $("#inputtext").html($("#username").val())
+            });
+          $("#setval").click(function(){
+            $("#username").val("value set")
+            });
+          $("#removebox").click(function(){
+            $("div").remove()
+            });
+          $("#empty").click(function(){
+            $("div").empty()
+            });
+          $("#class").click(function(){
+            $("p").toggleClass("blue")
+            });
+          $("#divblue").click(function(){
+            $("div").css("background-color", "blue");
+            });
+        });
+       
+        </script>
+</body>
+</html>

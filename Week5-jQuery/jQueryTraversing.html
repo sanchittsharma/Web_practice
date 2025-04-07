@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travesing</title>
+    <style>
+      .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="ancestors">
+        Example Div
+      <div style="width: 500px">
+        div (great-grandparent)
+        <h1>HEading 1</h1>
+        <h2>H2 Heading</h2>
+        <h3>Heading 3</h3>
+        <ul>
+          ul (grandparent)
+          <li>
+            li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>
+        <h4>Heading 4</h4>
+      </div>
+
+      <div style="width: 500px">
+        div (grandparent)
+        <p>
+          p (direct parent)
+          <span>span</span>
+          <h2>H2 Heading</h2>
+        </p>
+      </div>
+    </div>
+    <button id="parent">Show Parent</button>
+    <button id="parents">Show Parents</button>
+    <button id="children">Show Children</button>
+    <button id="find">Find Element</button>
+    <button id="siblings">Find Siblings</button>
+    <button id="nextall">Get all next element</button>
+    <button id="prevall">Get all prev element</button>
+    <script>
+      $(document).ready(function () {
+        $("#parent").click(function () {
+            $("span").parent().css({"color":"blue"})
+        });
+        $("#parents").click(function () {
+            $("span").parents().css({"color":"red"})
+        });
+        $("#children").click(function () {
+            $("div").children().css({"color":"orange"})
+        });
+        $("#find").click(function () {
+            $("div").find("span").css({"color":"purple"})
+        });
+        $("#siblings").click(function () {
+            $("h2").siblings().css({"color":"yellow","border":"1px solid black"})
+        });
+        $("#nextall").click(function () {
+            
+            $("h2").nextAll().css({"color":"pink","border":"1px solid black"})
+        });
+        $("#prevall").click(function () {
+            
+            $("h2").prevAll().css({"background-color":"red","border":"1px solid black"})
+        });
+        $("div").filter(".ancestors").css({"color":"red"});
+      });
+    </script>
+  </body>
+</html>
